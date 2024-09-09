@@ -12,9 +12,7 @@ export const ButtonContainer = styled(Container)`
     backgroundColor ?? 'transparent'};
 `;
 
-interface ButtonProps {}
-
-export const Button = styled.button<ButtonProps>`
+export const Button = styled.button`
   padding: 1rem 2rem;
 
   color: ${({ theme }) => theme.color.text};

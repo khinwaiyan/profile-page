@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 import { Container } from './container.styled';
+import { Text2 } from './text.styled';
 
 export const HeaderContainer = styled(Container)`
   width: 100%;
@@ -10,8 +11,10 @@ export const HeaderContainer = styled(Container)`
   z-index: 1000;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   background-color: ${({ theme }) => theme.color.primary};
-  padding: 1rem;
+  margin-bottom: 2rem;
+  height: 4rem;
 `;
 
 export const Nav = styled.nav`
@@ -19,13 +22,11 @@ export const Nav = styled.nav`
   gap: 2rem;
 `;
 
-export const NavItem = styled.a`
-  color: ${({ theme }) => theme.color.text};
-  font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes.medium};
+//Text2 스타일을 쓰지만 렌더링은 <a> 로 함
+export const NavItem = styled(Text2).attrs({ as: 'a' })`
   text-decoration: none;
   cursor: pointer;
-
+  background: transparent;
   &:hover {
     text-decoration: underline;
   }

@@ -1,6 +1,9 @@
+import 'animate.css';
+
 import { Fragment } from 'react';
 
-import Header from './components/Header';
+import { Header } from './components/Header';
+import { MainPage } from './MainPage';
 import { GlobalStyle } from './styles/globalStyle.styled';
 
 function App() {
@@ -8,6 +11,7 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <Header />
+      <MainPage />
     </Fragment>
   );
 }

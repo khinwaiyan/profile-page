@@ -1,9 +1,9 @@
 import { HeaderContainer, Nav, NavItem } from '../styles/header.styled';
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderContainer>
       <Nav>
-        <NavItem href="#about">About Me</NavItem>
+        <NavItem href="#about-me">About Me</NavItem>
         <NavItem href="#mbti">MBTI</NavItem>
         <NavItem href="#tmi">TMI</NavItem>
         <NavItem href="#contact">Contact</NavItem>
@@ -11,5 +11,3 @@ const Header = () => {
     </HeaderContainer>
   );
 };
-
-export default Header;

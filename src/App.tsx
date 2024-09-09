@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
-import { Reset } from 'styled-reset';
+
+import Header from './components/Header';
+import { GlobalStyle } from './styles/globalStyle.styled';
 
 function App() {
   return (
     <Fragment>
-      <Reset />
-      <></>
+      <GlobalStyle />
+      <Header />
     </Fragment>
   );
 }

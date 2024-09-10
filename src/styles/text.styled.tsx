@@ -18,13 +18,18 @@ export const Text1 = styled(TextContainer)<TextProps>`
   font-size: ${({ theme }) => theme.fontSizes.large};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   color: ${({ color, theme }) => color ?? theme.color.text};
+  text-align: center;
 `;
-
+export const MbtiText = styled(Text1)`
+  padding-top: 3rem;
+`;
 export const Text2 = styled(TextContainer)<TextProps>`
   font-size: ${({ theme }) => theme.fontSizes.small};
   font-weight: ${({ theme }) => theme.fontWeight.regular};
   color: ${({ color, theme }) => color ?? theme.color.text};
+  text-align: center;
 `;
+
 export const Span = styled.span`
   color: ${({ theme, color }) => color ?? theme.color.primary};
 `;

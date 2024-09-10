@@ -11,7 +11,10 @@ export const AboutMeContainer = styled(Container)`
     text-align: center;
   }
 `;
-
+export const TmiContainer = styled(AboutMeContainer)`
+  margin: 3rem;
+  gap: 2rem;
+`;
 export const ImageWrapper = styled.div`
   width: 50%;
   height: 100%;

@@ -9,12 +9,7 @@ export const AboutMe = () => {
   return (
     <AboutMeContainer>
       <ImageWrapper>
-        <ImageContainer
-          width="auto"
-          height="100%"
-          borderRadius="1rem"
-          opacity={0.5}
-        >
+        <ImageContainer width="auto" height="100%" opacity={0.5}>
           <img src="/images/profile.JPG" alt="Profile" />
         </ImageContainer>
       </ImageWrapper>

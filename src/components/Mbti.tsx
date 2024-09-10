@@ -7,11 +7,10 @@ import {
   MbtiCardContainer,
   MbtiCardWrapper,
 } from '../styles/mbti.styled';
-
 interface MbtiCardProps {
   trait: string;
 }
-
+import { MbtiText } from '../styles/text.styled';
 const MbtiCardWithContent = ({ trait }: MbtiCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -40,10 +39,13 @@ export function MbtiGrid() {
   ];
 
   return (
-    <MbtiCardWrapper>
-      {traits.map(({ trait }) => (
-        <MbtiCardWithContent key={trait} trait={trait} />
-      ))}
-    </MbtiCardWrapper>
+    <>
+      <MbtiText>저의 MBTI 는 바로 바로</MbtiText>
+      <MbtiCardWrapper>
+        {traits.map(({ trait }) => (
+          <MbtiCardWithContent key={trait} trait={trait} />
+        ))}
+      </MbtiCardWrapper>
+    </>
   );
 }

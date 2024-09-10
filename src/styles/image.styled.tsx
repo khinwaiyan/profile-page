@@ -12,8 +12,8 @@ export const ImageContainer = styled.div<ImageContainerProps>`
   width: ${({ width }) => width ?? '15rem'};
   height: ${({ height }) => height ?? '15rem'};
   margin: ${({ margin }) => margin ?? '0 auto'};
-  border-radius: ${({ borderRadius }) => borderRadius ?? '50%'};
-  opacity: ${({ opacity }) => opacity ?? 0};
+  opacity: ${({ opacity }) => opacity ?? 1};
+  border-radius: ${({ borderRadius }) => borderRadius ?? '1rem'};
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -23,5 +23,20 @@ export const ImageContainer = styled.div<ImageContainerProps>`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+`;
+export const SpinningImage = styled.img`
+  animation: spin 10s linear infinite; /* Spinning animation */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 `;

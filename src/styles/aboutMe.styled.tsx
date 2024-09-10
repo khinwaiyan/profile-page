@@ -14,6 +14,7 @@ export const AboutMeContainer = styled(Container)`
 
 export const ImageWrapper = styled.div`
   width: 50%;
+  height: 100%;
 `;
 
 export const TextWrapper = styled.div`

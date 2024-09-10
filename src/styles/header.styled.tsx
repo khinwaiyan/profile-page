@@ -13,8 +13,10 @@ export const HeaderContainer = styled(Container)`
   justify-content: flex-end;
   align-items: center;
   background-color: ${({ theme }) => theme.color.primary};
-  margin-bottom: 2rem;
+
+  color: #000;
   height: 4rem;
+  color:;
 `;
 
 export const Nav = styled.nav`

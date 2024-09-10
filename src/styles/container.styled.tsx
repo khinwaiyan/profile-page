@@ -7,8 +7,8 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  padding: ${({ padding }) => padding ?? '0rem'};
-  margin: ${({ margin }) => margin ?? '0'};
+  padding: ${({ padding }) => padding};
+  margin: ${({ margin }) => margin};
   background-color: ${({ backgroundColor, theme }) =>
     backgroundColor ?? theme.color.bg};
 `;

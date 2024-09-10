@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 import { Container } from './container.styled';
 
-export const TextContainer = styled(Container)`
+const TextContainer = styled(Container)`
   padding: 0.5rem;
   margin: 1rem 0;
 `;

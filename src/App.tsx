@@ -1,11 +1,16 @@
-import { Fragment } from 'react';
-import { Reset } from 'styled-reset';
+import 'animate.css';
 
+import { Fragment } from 'react';
+
+import { MainPage } from '../src/components/MainPage';
+import { Header } from './components/Header';
+import { GlobalStyle } from './theme/globalStyle.styled';
 function App() {
   return (
     <Fragment>
-      <Reset />
-      <></>
+      <GlobalStyle />
+      <Header />
+      <MainPage />
     </Fragment>
   );
 }

@@ -11,9 +11,9 @@ export const theme: DefaultTheme = {
     heading: 'Clear Sans, sans-serif',
   },
   fontSizes: {
-    small: '12px',
-    medium: '16px',
-    large: '24px',
+    small: '1.4rem',
+    medium: '1.6rem',
+    large: '2.4rem',
   },
   fontWeight: {
     light: 300,

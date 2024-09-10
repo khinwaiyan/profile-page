@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Container } from './container.styled';
 import { Text2 } from './text.styled';
+import { theme } from './theme';
 
 export const HeaderContainer = styled(Container)`
   width: 100%;
@@ -12,7 +13,7 @@ export const HeaderContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: ${({ theme }) => theme.color.primary};
+  background-color: ${theme.color.primary};
 
   color: #000;
   height: 4rem;
@@ -31,5 +32,10 @@ export const NavItem = styled(Text2).attrs({ as: 'a' })`
   background: transparent;
   &:hover {
     text-decoration: underline;
+  }
+`;
+export const ContactItem = styled(NavItem)`
+  &:hover {
+    color: ${theme.color.bg};
   }
 `;

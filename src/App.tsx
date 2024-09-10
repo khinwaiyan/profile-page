@@ -4,8 +4,7 @@ import { Fragment } from 'react';
 
 import { MainPage } from '../src/components/MainPage';
 import { Header } from './components/Header';
-import { GlobalStyle } from './styles/globalStyle.styled';
-
+import { GlobalStyle } from './theme/globalStyle.styled';
 function App() {
   return (
     <Fragment>

@@ -1,8 +1,8 @@
-import { TextWrapper } from '../styles/aboutMe.styled';
 import { TmiContainer } from '../styles/aboutMe.styled';
-import { ImageContainer, SpinningImage } from '../styles/image.styled';
-import { Text1 } from '../styles/text.styled';
-
+import { TextWrapper } from '../styles/common.styled';
+import { ImageContainer } from '../styles/common.styled';
+import { Text1 } from '../styles/common.styled';
+import { SpinningImage } from '../styles/header.styled';
 export const Tmi = () => {
   return (
     <TmiContainer>
@@ -10,7 +10,7 @@ export const Tmi = () => {
         <SpinningImage src="/images/globe.jpg"></SpinningImage>
       </ImageContainer>
       <TextWrapper>
-        <Text1>TMI 으로는 미얀마라는 나라에서 왔답니다.</Text1>
+        <Text1>TMI로 말씀드리자면, 저는 미얀마에서 왔어요.</Text1>
       </TextWrapper>
       <ImageContainer borderRadius="50%">
         <SpinningImage src="/images/pagoda.jpg"></SpinningImage>

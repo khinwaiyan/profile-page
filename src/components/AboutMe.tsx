@@ -1,10 +1,8 @@
-import {
-  AboutMeContainer,
-  ImageWrapper,
-  TextWrapper,
-} from '../styles/aboutMe.styled';
-import { ImageContainer } from '../styles/image.styled';
-import { AnimatedText1, AnimatedText2, Span } from '../styles/text.styled';
+import { AboutMeContainer, ImageWrapper } from '../styles/aboutMe.styled';
+import { AnimatedText1, AnimatedText2 } from '../styles/aboutMe.styled';
+import { TextWrapper } from '../styles/common.styled';
+import { ImageContainer } from '../styles/common.styled';
+import { Span } from '../styles/common.styled';
 export const AboutMe = () => {
   return (
     <AboutMeContainer>
@@ -19,10 +17,13 @@ export const AboutMe = () => {
           안녕하세요!! <Span>웨이</Span> 입니다.
         </AnimatedText1>
 
-        <AnimatedText1 delay="2s">컴퓨터공학부 21힉번</AnimatedText1>
+        <AnimatedText2 delay="2s">
+          컴퓨터공학부 <Span>21</Span>힉번
+        </AnimatedText2>
 
         <AnimatedText2 delay="4s">
-          코딩 그리고 사람들 과 대화를 좋아해요.
+          <Span>코딩</Span>을 좋아하고, 사람들과 <Span>이야기</Span> 나누는 것을
+          즐깁니다.{' '}
         </AnimatedText2>
       </TextWrapper>
     </AboutMeContainer>

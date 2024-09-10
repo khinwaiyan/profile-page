@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container } from './container.styled';
+import { Container } from './common.styled';
 
 export const PageContainer = styled(Container)`
   height: calc(100vh - 4rem);

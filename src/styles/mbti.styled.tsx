@@ -49,7 +49,7 @@ export const MbtiCard = styled.div`
     backface-visibility: hidden;
   }
 `;
-export const CardBase = styled.div`
+const CardBase = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
